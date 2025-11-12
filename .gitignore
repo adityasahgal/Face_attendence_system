@@ -1,0 +1,99 @@
+# ============================
+# Python / FastAPI Ignore File
+# ============================
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folders
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+
+# IDE settings (VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment and config
+*.env
+.env.*
+!example.env  # Allow example env if you want to show structure
+config.ini
+settings.json
+
+# Logs
+*.log
+logs/
+*.pid
+
+# Database / sqlite
+*.db
+*.sqlite3
+db.sqlite3
+
+# Testing and coverage
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.pytest_cache/
+htmlcov/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# FastAPI specific
+# (If you’re using uvicorn reload dirs)
+*.pid
+*.sock
+
+# VSCode launch config
+.vscode/
+
+# Docker
+docker-compose.override.yml
+
+# Cache folders
+__pypackages__/
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Generated static/media if any
+staticfiles/
+media/
+uploads/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Local database or secret JSON files
+*.json
+!package.json
+
+# Optional - exclude model weights or ML data
+*.h5
+*.pt
+*.pkl
+*.joblib
+datasets/
+models/
+
