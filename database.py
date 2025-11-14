@@ -14,7 +14,6 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 # Base class for models
 Base = declarative_base()
 
-
 def get_db():
     """Dependency for FastAPI routes."""
     db = SessionLocal()
@@ -22,7 +21,6 @@ def get_db():
         yield db
     finally:
         db.close()
-
 
 def create_tables():
     """Create all tables if not exist."""
